@@ -12,7 +12,6 @@ exports.gcmServerApiKey = 'AIzaSyDqEjh9CQ1HEsd7MPc0PU6yX22C709QIOE';
 exports.apnsCertData = readCredentialsFile('apns_cert_dev.pem');
 exports.apnsKeyData =readCredentialsFile('apns_key_dev.pem');
 
-
 //--- Helper functions ---
 
 function readCredentialsFile(name) {

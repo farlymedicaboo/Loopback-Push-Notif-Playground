@@ -6,6 +6,7 @@ module.exports = function (app) {
   function startPushServer() {
 // Add our custom routes
     var badge = 1;
+    console.log("testb");
     app.post('/notify/:id', function (req, res, next) {
       var note = new Notification({
         expirationInterval: 3600, // Expires 1 hour from now.

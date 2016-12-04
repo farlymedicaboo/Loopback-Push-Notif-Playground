@@ -6,6 +6,7 @@ function InstallationsController($scope, $http) {
     });
 
     $scope.notify = function (id, msg) {
+        console.log("testa" +msg+" "+id);
         $http.post('/notify/' + encodeURIComponent(id), {msg: msg}).success(function (data, status, headers) {
             $scope.status = 'Notification sent: ' + data + ' status: ' + status;
         });
